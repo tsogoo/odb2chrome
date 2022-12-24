@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-csp>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Chrome OBD-2</title>
+</head>
+<body>
+<div id="container">
+    <div id="window_titlebar">
+        <nav>
+            <ul>
+                <li><a href="#/connection">Connection</a></li>
+                <li><a href="#/metrics">Metrics</a></li>
+                <li><a href="#/diagnostics">Diagnostics</a></li>
+            </ul>
+        </nav>
+        <div id="window_titlebar_left">
+            <div class="icon-button" id="window-minimize"></div>
+            <div class="icon-button" id="window-maximize"></div>
+            <div class="icon-button" id="window-close"></div>
+        </div>
+    </div>
+    <div id="window_body" ng-controller="app">
+        <div ui-view></div>
+    </div>
+</div>
+<script src="bwr/jquery.min.js"></script>
+<script src="js/window.js"></script>
+<script src="bwr/bootstrap.min.js"></script>
+<script src="bwr/d3.min.js"></script>
+<script src="bwr/angular.min.js"></script>
+<script src="bwr/angular-ui-router.min.js"></script>
+
+<script src="js/app1.js"></script>
+
+</body>
+</html>
